@@ -232,6 +232,7 @@ jobs:
         if: fromJson(needs.config.outputs.deploy) && !contains(matrix.target, 'ios')
         uses: softprops/action-gh-release@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: true
           tag_name: ${{ env.VERSION }}
           files: |-
@@ -334,6 +335,7 @@ jobs:
         if: fromJson(needs.config.outputs.deploy)
         uses: softprops/action-gh-release@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: true
           tag_name: ${{ env.VERSION }}
           files: |-
