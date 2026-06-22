@@ -144,7 +144,7 @@ jobs:
       - name: Install cargo-binstall
         uses: taiki-e/install-action@cargo-binstall
       - name: Install cargo-edit
-        run: cargo binstall cargo-edit@^0.11 --no-confirm --log-level debug
+        run: cargo binstall cargo-edit --no-confirm --log-level debug
       - name: set cargo version
         run: |
           cargo set-version "$VERSION" --exclude voicevox_core_python_api --exclude downloader --exclude xtask
@@ -286,7 +286,7 @@ jobs:
       - name: Install cargo-binstall
         uses: taiki-e/install-action@cargo-binstall
       - name: Install cargo-edit
-        run: cargo binstall cargo-edit@^0.11 --no-confirm
+        run: cargo binstall cargo-edit --no-confirm
       - name: set cargo version
         run: |
           cargo set-version "$VERSION" -p voicevox_core_java_api
