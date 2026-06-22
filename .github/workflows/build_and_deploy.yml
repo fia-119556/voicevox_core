@@ -58,7 +58,7 @@ jobs:
               "target": "aarch64-linux-android",
               "artifact_name": "android-arm64-cpu",
               "use_cuda": false,
-              "can_skip_in_simple_test": true
+              "can_skip_in_simple_test": false
             },
             {
               "os": "ubuntu-22.04",
@@ -66,7 +66,7 @@ jobs:
               "target": "x86_64-linux-android",
               "artifact_name": "android-x86_64-cpu",
               "use_cuda": false,
-              "can_skip_in_simple_test": true
+              "can_skip_in_simple_test": false
             }
           ]'
 
